@@ -1,0 +1,16 @@
+<div class="flex-item">
+	<div class="mat-display-2" style="width:fit-content;text-align: center;line-height: 70%;">
+		<span style="font-size: small;font-weight: lighter">STEP</span><br>
+		{{step}}
+	</div>
+
+	<div class="mat-display-2">{{title}}</div>
+	<ul class="mat-subheading-2">
+		<li *ngFor="let option of options.split(',')">{{option}}</li>
+	</ul>
+
+</div>
+
+<div class="flex-item">
+	<img [src]="'assets/'+icon+'.svg'" style="width: 200px">
+</div>

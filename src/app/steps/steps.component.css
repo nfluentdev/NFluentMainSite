@@ -1,0 +1,7 @@
+
+.flex-item {
+    padding: 10px;
+    min-width: 500px;
+    flex: 50%;
+    text-align: left;
+}

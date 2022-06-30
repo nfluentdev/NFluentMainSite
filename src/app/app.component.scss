@@ -1,0 +1,83 @@
+@use 'sass:map';
+@use './node_modules/@angular/material' as mat;
+@use '../nfluent' as nfluent;
+
+
+app-bloc {
+  margin: 15px;
+}
+
+.flex-container {
+  text-align: center;
+  display: inline-flex;
+  flex-direction: row;
+}
+
+.flex-item {
+  flex: 50%;
+}
+
+a {
+  margin:10px;
+  font-style: normal !important;
+  font-size: medium;
+  text-decoration: none;
+  font-variant: small-caps;
+}
+
+/* Responsive layout - makes a one column layout instead of a two-column layout */
+@media (max-width: 800px) {
+  .flex-container {
+    flex-direction: column;
+  }
+  .flex-item {
+    flex: 100%;
+  }
+
+}
+
+
+.small-round {
+  width: 10rem;
+  height: 10rem;
+  background-color: #5900B7;
+  border-radius: 50%;
+  position: absolute;
+}
+
+.medium-round {
+  width: 20rem;
+  height: 20rem;
+  background-color: #5900B7;
+  border-radius: 50%;
+  position: absolute;
+  opacity: 20%;
+}
+
+.large-round {
+  width: 30rem;
+  height: 30rem;
+  background-color: #5900B7;
+  border-radius: 50%;
+  position: absolute;
+  opacity: 10%;
+}
+
+.rounds-logo {
+  position: relative;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin:auto;
+  width:10rem;
+  margin-top: 13rem;
+  margin-bottom: 5rem;
+}
+
+.example-spacer {
+  flex: 1 1 auto;
+}
+
+
+
