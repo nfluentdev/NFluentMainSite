@@ -1,7 +1,26 @@
 
-.flex-item {
-    padding: 10px;
-    min-width: 500px;
-    flex: 50%;
-    text-align: left;
+
+.flex-container {
+    display: flex;
+    margin-top: 1rem;
+    flex-direction: row;
+    align-content: flex-start;
+}
+
+.step-label {
+    flex: 10%;
+    text-align: center;
+    position:relative;
+}
+
+@media (max-width: 800px) {
+    .flex-container {
+        flex-direction: column;
+    }
+    .flex-item {
+        flex: 95%;
+    }
+    .step-label {
+        display: none;
+    }
 }

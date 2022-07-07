@@ -1,4 +1,4 @@
-<mat-toolbar style="width: 100%;background: none;">
+<mat-toolbar style="width: 100vw;background: none;">
 	&nbsp;	&nbsp;
 	<img src="assets/logo-nfluent-purple.svg" style="height: 40px;">
 	<span class="example-spacer"></span>
@@ -11,7 +11,14 @@
 	</div>
 </mat-toolbar>
 
-<div class="flex-container" style="height: 50vh;padding:100px;">
+
+<div style="position: absolute;left:0;top:0;width:100vw;height:80%;z-index: -1;background-color: rgba(184,148,226,0.19);">
+
+</div>
+
+
+
+<div class="flex-container">
 	<div class="flex-item">
 		<div class="rounds-logo">
 			<div class="small-round"></div>
@@ -19,21 +26,20 @@
 			<div class="large-round"></div>
 		</div>
 	</div>
-	<div class="flex-item" style="text-align: right;">
-		<div class="mat-display-3" style="display: inline-block;width:80%;  margin-top: 3rem;">
+	<div class="flex-item" style="text-align: right;margin-right:10rem;">
+		<div class="mat-display-4" style="display: inline-block;  margin-top: 3rem;">
 			The NFT agency dedicated to the management of
 			Non-Fungible Tokens.
 		</div>
-		<div class="mat-subheading-2">
+		<div class="mat-display-1">
 			From the strategy definition to implementation, we bring your NFT projects to life.
 			We create, sell, distribute, store, manage, secure and track your digital assets.
 		</div>
 	</div>
 </div>
 
-
+<br><br>
 <div style="padding: 15px;text-align: center;width:100%;">
-
 	<app-section title="What can you do with NFLUENT ?" id="youcando">
 		<app-bloc title="Innovate" icon="innovate">
 			Use NFT technology to
@@ -67,38 +73,63 @@
 
 	</app-section>
 
+
+
 	<app-section title="How it works ?" id="howitwork">
-		<div class="flex-container">
-			<app-steps step="1"
-			           icon="study"
-			           options="Requirements,Strategy,Technical specifications"
-			           title="Preliminary study">
-			</app-steps>
 
-			<app-steps step="2"
-			           icon="build"
-			           options="Front NFT store/marketplace,API connection,Smart contract setup"
-			           title="Build">
-			</app-steps>
+		<app-steps step="01"
+		           icon="study"
+		           options="Requirements,Strategy,Technical specifications"
+		           title="Preliminary study">
+		</app-steps>
 
-			<app-steps step="3"
-			           icon="sell"
-			           options="Core attributes,Mint & sale,Resale,Payment,Auction,Price control,Governance,Royalties,Benefits,Certificates"
-			           title="Sell NFTs">
-			</app-steps>
+		<app-steps step="02"
+		           icon="build"
+		           options="Front NFT store/marketplace,API connection,Smart contract setup"
+		           title="Build">
+		</app-steps>
 
-			<app-steps step="4"
-			           icon="promote-nft"
-			           options="Raise awareness on social channels IG; Twttr; Discord, NFTLaunches,SEO management"
-			           title="Promote your NFTs">
-			</app-steps>
+		<app-steps step="03"
+		           icon="sell"
+		           w_icon="80%"
+		           options="Core attributes,Mint & sale,Resale,Payment,Auction,Price control,Governance,Royalties,Benefits,Certificates"
+		           title="Sell NFTs">
+		</app-steps>
+
+		<app-steps step="04"
+		           icon="promote-nft"
+		           w_icon="60%"
+		           options="Raise awareness on social channels IG; Twttr; Discord, NFTLaunches,SEO management"
+		           title="Promote your NFTs">
+		</app-steps>
 
 
-		</div>
 	</app-section>
 
+
+	<div style="width:100vw;height: fit-content;background: linear-gradient(250.5deg, #64FFA2 1.64%, #7939FF 52.45%, #BD32FF 99.2%);text-align: left;padding-left: 10rem;">
+
+		<br><br><br>
+		<div class="color-accent mat-display-4" style="margin-bottom: 5px;">
+			We<br>
+			believe
+		</div>
+
+		<div style="color:white" class="mat-display-4">
+			in NFTs that make sense,<br>
+			that add value.
+		</div>
+		<br><br>
+
+	</div>
+
+
+
+
+
+
 	<app-section title="The extented NFT" id="service">
-		<div class="mat-body-1">
+		<div class="mat-display-1">
 			NFluenT is implementing innovative customized functionalities
 			on basic NFTs to create X-NFTs.
 		</div>
@@ -160,16 +191,35 @@
 	</app-section>
 
 	<app-section title="The team" id="team">
-		<div class="flex-container">
-			<div class="flex-item">
 
-			</div>
-		</div>
+			<app-team firstname="Thomas" lastname="LAFFOURCADE"
+			          refs="La Villette, La Tour Eiffel, Bateaux Parisiens, Compagnie des Alpes, Auditoire, FullSIX, Business areas, Ticketing, Tourism, Communication, Health"
+			          linkedin="https://www.linkedin.com/in/tlaffourcade/"
+			          photo="assets/thomas.jpg">
+				<div class="mat-subheading-1">
+					10 years experience in ticketing and
+					project management<br>
+					10 years experience in finance
+				</div>
+
+			</app-team>
+
+			<app-team firstname="Hervé" lastname="HOAREAU"
+			          refs="Groupe SFR, Capgemini, Business areas, Web, Télécoms, Industrie automobile"
+			          linkedin="https://www.linkedin.com/in/hhoareau/"
+			          photo="assets/herve.jpg">
+				<div class="mat-subheading-1">
+					20 years of experience
+					in project management, IT, programming.
+				</div>
+			</app-team>
+
 	</app-section>
 
-	<app-section title="Contacts" id="contact">
 
-	</app-section>
+<!--	<app-section title="Contacts" id="contact">-->
+
+<!--	</app-section>-->
 
 </div>
 

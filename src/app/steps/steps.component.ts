@@ -10,6 +10,7 @@ export class StepsComponent implements OnInit {
   @Input() title="";
   @Input() icon="";
   @Input() step="";
+  @Input() w_icon="70%"
 
   constructor() { }
 

@@ -9,13 +9,16 @@ import { BlocComponent } from './bloc/bloc.component';
 import { StepsComponent } from './steps/steps.component';
 import { SectionComponent } from './section/section.component';
 import {MatToolbarModule} from "@angular/material/toolbar";
+import { TeamComponent } from './team/team.component';
+import {MatIconModule} from "@angular/material/icon";
 
 @NgModule({
   declarations: [
     AppComponent,
     BlocComponent,
     StepsComponent,
-    SectionComponent
+    SectionComponent,
+    TeamComponent
   ],
     imports: [
         BrowserModule,
@@ -23,6 +26,7 @@ import {MatToolbarModule} from "@angular/material/toolbar";
         MatButtonModule,
         MatExpansionModule,
         MatToolbarModule,
+        MatIconModule,
     ],
   providers: [],
   bootstrap: [AppComponent]

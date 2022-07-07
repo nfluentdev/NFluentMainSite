@@ -8,6 +8,7 @@ import {Component, Input, OnInit} from '@angular/core';
 export class BlocComponent implements OnInit {
   @Input() icon="";
   @Input() title="";
+  @Input() w_icon="45px";
   @Input() text="";
   @Input() width="350px";
   @Input() height="200px";
