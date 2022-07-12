@@ -7,6 +7,7 @@ import {Component, Input, OnInit} from '@angular/core';
 })
 export class StepsComponent implements OnInit {
   @Input() options="";
+  @Input() inverse=false;
   @Input() title="";
   @Input() icon="";
   @Input() step="";
